@@ -4,7 +4,7 @@ public class EmpresaDeVuelo {
     public static void main(String[] args) {
         String reserva = "si";
         int matriz[][] = new int[6][3];
-        int ndestino,nvuelo,nboletos,asientosdispo;
+        int ndestino,nvuelo,nboletos;
 
 
         Scanner inreserva = new Scanner(System.in);
@@ -19,9 +19,9 @@ public class EmpresaDeVuelo {
             }
         }
 
-        while(!reserva.equalsIgnoreCase("finish") && reserva.equalsIgnoreCase("si")){
+        while(!reserva.equalsIgnoreCase("finish")){
 
-            System.out.println("Si desea hacer una reserva ingrese 'si");
+            System.out.println("Si desea hacer una reserva ingrese 'si'. Si desea salir ingrese 'finish'");
             reserva = inreserva.next();
 
             System.out.println("Ingrese el destino al que desea viajar:");
